@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Enlaces alternativos</title>
+    <link rel="stylesheet" href="ejercicio8.css">
+</head>
+<body>
+    <a href="../index.html" class="volver-btn">Volver al Menú</a> 
+    <div class="contenido-central">
+        <h1>Alternar Secciones</h1>
+        <h2>Contenido de la página</h2>
+        
+        <div class="content-analisis">
+            <h3 class="seccion-titulo">Definición de HTML</h3>
+            <a href="#" class="enlace-toggle" data-target-id="seccion1-contenido">Mostrar Contenido</a>
+            <div id="seccion1-contenido" class="contenido-seccion oculto">
+                <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de 
+                la Web. Define el significado y la estructura del contenido web. HTML utiliza "marcas" para etiquetar texto, 
+                imágenes y otro contenido para mostrarlo en un navegador Web. Las marcas HTML incluyen "elementos" especiales 
+                como head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, 
+                details, embed, nav, output, progress, video, ul, ol, li y muchos otros.</p>
+            </div><hr>
+
+            <h3 class="seccion-titulo">Definición de CSS</h3>
+            <a href="#" class="enlace-toggle" data-target-id="seccion2-contenido">Mostrar Contenido</a>
+            <div id="seccion2-contenido" class="contenido-seccion oculto">
+                <p>CSS es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte del W3C. 
+                Anteriormente , el desarrollo de varias partes de las especificaciones de CSS era realizado de manera sincrónica, 
+                lo que permitía el versionado de las recomendaciones. Probablemente habrás escuchado acerca de CSS1, CSS2.1, CSS3. 
+                Sin embargo, CSS4 nunca se ha lanzado como una versión oficial.</p>
+            </div><hr>
+
+            <h3 class="seccion-titulo">Definición de JavaScript</h3>
+            <a href="#" class="enlace-toggle" data-target-id="seccion3-contenido">Mostrar Contenido</a>
+            <div id="seccion3-contenido" class="contenido-seccion oculto">
+                <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones 
+                complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información 
+                estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de 
+                Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente 
+                JavaScript está involucrado. Es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales 
+                (HTML y CSS) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.</p>
+            </div>
+        </div>
+    
+    </div>
+    <script src="ejercicio8.js"></script>
+</body>
+</html>

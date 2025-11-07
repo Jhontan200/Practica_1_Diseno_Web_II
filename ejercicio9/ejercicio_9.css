@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fce7ff;
+}
+
+.contenido-scroll {
+    min-height: 200vh;
+    padding: 20px;
+}
+
+.nota-scroll {
+    padding-top: 150px;
+    font-style: italic;
+    color: #666;
+}
+
+.caja-informacion {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 250px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.fondo-raton {
+    background-color: #FFFFCC;
+}
+
+.fondo-teclado {
+    background-color: #CCE6FF;
+}
+
+.caja-informacion h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.caja-informacion p {
+    font-size: 1em;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.caja-informacion span {
+    font-weight: 600;
+}
+
+
+.volver-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #FFFFFF;
+    color: #ff8206;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.volver-btn:hover {
+    background-color: #834201;
+    color: #FFFFFF;
+}

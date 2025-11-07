@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Análisis del DOM</title>
+    <link rel="stylesheet" href="ejercicio5.css">
+</head>
+<body>
+    <a href="../index.html" class="volver-btn">Volver al Menú</a> 
+
+    <div class="contenido-central">
+        <h2>Análisis de Enlaces (DOM)</h2>
+        <div class="buttons-grid">
+            <button class="btn-action" onclick="contarTodosLosEnlaces()">Contar Los Enlaces</button>
+            <button class="btn-action" onclick="mostrarPenultimoEnlace()">Dirección Del Penúltimo Enlace</button>
+            <button class="btn-action" onclick="contarEnlacesTercerParrafo()">Enlaces Del Tercer Párrafo</button>
+        </div>
+        <div class="content-analisis">
+            <p>
+                Este es el primer párrafo. Contiene enlaces a diferentes paginas que ayudan con el diseño y creación de páginas web, 
+                tenemos <a href="https://www.w3schools.com/" target="_blank">w3schools</a> que ayuda con pautas y ejemplos del uso de
+                diferentes lenguajes de programación, para el manejo de los colores en HTML tenemos 
+                <a href="https://htmlcolorcodes.com/es/" target="_blank">HTML Color Codes</a>, por último tenemos 
+                <a href="https://cssgridgenerator.io/" target="_blank">CSS Grid Generator</a> que nos ayuda a diseñar cuadriculas en Css
+                personalizados de forma sencilla.
+            </p>
+
+            <p>
+                Este es el segundo párrafo. Contiene un enlace directo a <a href="https://www.google.com" target="_blank">Google</a>, 
+                para navegar de forma rápida ante cualquier tipo de consulta, y otro enlace directo a 
+                <a href="https://translate.google.com" target="_blank">Google Translate</a>, para ayudarnos con traducciones rápidas de
+                palabras o terminos que no conozcamos con exactitud.</p>
+            
+            <p>
+                Este es el tercer párrafo. Contiene un enlace a <a href="https://www.wikipedia.org" target="_blank">Wikipedia
+                </a>, para investigaciones de conceptos rápidos o información relevante para ciertos aspectos,
+                y un segundo enlace a <a href="https://www.nationalgeographic.com" target="_blank">National Geographic</a>, una página
+                con información general de la geografía del mundo.
+            </p>
+            <p>
+                Este es el cuarto párrafo. Contiene enlaces de sitios web mas avanzados, como es <a href="https://www.jetbrains.com/es-es/" 
+                target="_blank">Jetbrains</a> es una empresa que desarrollaherramientas avanzadas para los programadores, 
+                también tenemos <a href="https://uiverse.io/" target="_blank">Uiverse.io</a> es una plataforma que ofrece entornos de
+                usuario de forma gratuita y personalizados creados con HTML, CSS y Javascript, y por ultimo tenemos 
+                <a href="https://quickref.me/" target="_blank">Quickref.me</a> es una plataforma que reúne hojas de referencia 
+                rápidas sobre diversos lenguajes de programación, herramientas y tecnologías.
+            </p>
+            <div id="resultado">
+            Esperando acción...
+            </div>
+        </div>
+    </div>
+
+    <script src="ejercicio5.js"></script>
+</body>
+</html>
+
+
+

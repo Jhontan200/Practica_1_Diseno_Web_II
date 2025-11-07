@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Mostrar Contenido Enlace</title>
+    <link rel="stylesheet" href="ejercicio6.css">
+</head>
+<body>
+    <a href="../index.html" class="volver-btn">Volver al Menú</a> 
+    <div class="contenido-central">
+        <h2>Contenido expandible</h2><hr>
+        <div class="content-analisis">  
+            <p>Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura de un documento HTML. 
+            Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de 
+            etiquetas relacionadas entre sí, que se denomina árbol DOM. <br>
+            <span id="contenido-oculto" class="oculto"> Desde el navegador, la forma de acceder al DOM es a través de un objeto 
+            Javascript llamado document, que representa el árbol DOM de la página o, más concretamente, la página de la pestaña 
+            del navegador donde nos encontramos. En su interior pueden existir varios tipos de elementos, pero principalmente 
+            serán objetos de tipo "Elemento" o "Nodo" : Un "Elemento" no es más que la representación genérica de una etiqueta: HTMLElement. 
+            Un "Nodo" es una unidad más básica, la cuál puede ser  o un nodo de texto.</span>
+            </p>
+            <a href="#" id="mostrar-enlace" class="action-link">Leer más...</a>
+        </div>
+    </div>
+    <script src="ejercicio6.js"></script>
+</body>
+</html>

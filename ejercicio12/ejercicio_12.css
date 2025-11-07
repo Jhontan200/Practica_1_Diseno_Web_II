@@ -1,0 +1,241 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #effcb4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    min-height: 100vh;
+}
+
+.contenedor-formulario {
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 95%;
+    margin: 20px 0;
+    transition: box-shadow 0.3s ease;
+    margin-left: 14rem;
+}
+
+.contenedor-formulario:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #e8c91a;
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+.nota-obligatorio {
+    text-align: center;
+    color: #ea4335;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+legend {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #3c4043;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5f6368;
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 1px #1a73e8;
+    outline: none;
+}
+
+.input-grande {
+    grid-column: 1 / -1;
+}
+
+.input-radio-sexo {
+    grid-column: span 1;
+}
+
+.opciones-radio {
+    display: flex;
+    gap: 25px;
+    padding-top: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opciones-radio input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.opciones-radio label {
+    position: relative;
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+    padding-left: 28px;
+    font-size: 1em;
+    color: #3c4043;
+}
+
+.opciones-radio label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid #aeb5be;
+    border-radius: 50%;
+    background: #fff;
+    transition: border-color 0.3s;
+}
+
+.opciones-radio input[type="radio"]:checked+label:before {
+    border-color: #e8b81a;
+    background-color: #fff;
+}
+
+.opciones-radio input[type="radio"]:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: #e8b81a;
+    border-radius: 50%;
+}
+
+.campo-invalido {
+    border: 2px solid #ea4335 !important;
+    background-color: #fff0f0;
+}
+
+.grupo-invalido {
+    border: 1px solid #ea4335;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff0f0;
+}
+
+.mensaje-error {
+    color: #ea4335;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 20px;
+    background-color: #fce8e6;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #34a853;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2e8d4a;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        padding: 25px;
+    }
+
+    fieldset {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .input-radio-sexo {
+        grid-column: 1 / 1;
+    }
+}
+
+.volver-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #FFFFFF;
+    color: #ff8206;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.volver-btn:hover {
+    background-color: #834201;
+    color: #FFFFFF;
+}
